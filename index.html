@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav navbar-default navbar-fixed-top paint-top-header">
+    <div class="drawing-tools">
+        <ul class="menu">
+            <li class="mark-up-tools">
+                <a class="header-icon">
+                    <b class="f-12">Markup Tools:</b>
+                </a>
+            </li>
+            <li class="dropdown-custom">
+                <a href="#" class="header-icon">
+                    <i class="sa sa-pencil-custom" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom">
+                    <li id="pencil" class="tools-btn" title="Pencil">
+                        <a href="#">
+                            <i class="sa sa-pencil-custom pencil-icon" custom-back="sa-pencil-custom" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li id="highlighter" class="tools-btn" title="Highlighter">
+                        <a href="#">
+                            <i class="sa sa-marker-custom" custom-back="sa-marker-custom" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-custom">
+                <a href="#" class="header-icon">
+                    <i class="sa sa-arrow-line" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom">
+                    <li id="arrow" class="tools-btn" title="Arrow">
+                        <a href="#">
+                            <i class="sa sa-arrow-line-custom" aria-hidden="true" custom-back="sa-arrow-line-custom"></i>
+                        </a>
+                    </li>
+                    <li id="line" class="tools-btn" title="Straight Line">
+                        <a href="#">
+                            <i class="sa sa-arrow-line" custom-back="sa-arrow-line" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-custom">
+                <a href="#" class="header-icon">
+                    <i class="sa sa-square-custom" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom">
+                    <li id="rectangle" class="tools-btn" title="Rectangle">
+                        <a href="#">
+                            <i class="sa sa-square-custom" custom-back="sa-square-custom" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li id="circle" class="tools-btn" title="Circle">
+                        <a href="#">
+                            <i class="sa sa-circle-custom circle-icon" aria-hidden="true" custom-back="sa-circle-custom"></i>
+                        </a>
+                    </li>
+                    <li id="oval" class="tools-btn" title="Eclipse">
+                        <a href="#">
+                            <i class="sa sa-elipse-custom" custom-back="sa-elipse-custom" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-custom" title="Text">
+                <a href="#" class="header-icon">
+                    <i class="sa sa-text-custom"></i>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom">
+                    <li id="text" class="tools-btn" title="Text">
+                        <a href="#">
+                            <i class="sa sa-text-custom" custom-back="sa-text-custom"></i>
+                        </a>
+                    </li>
+                    <li id="comment" class="tools-btn" title="Comments">
+                        <a href="#">
+                            <i class="sa sa-comment" aria-hidden="true" custom-back="sa-comment"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li id="shade" class="tools-btn" title="blackout">
+                <a href="#">
+                    <i class="sa sa-blur-custom" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="dropdown-custom">
+                <a href="#" class="header-icon">
+                    <span class="f-12">Size:</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom brush-dropdown">
+                    <li class="brush-picker" brush-size="2">
+                        <a href="#">
+                            <i class="border2" aria-hidden="true">&nbsp;</i>
+                        </a>
+                    </li>
+                    <li class="brush-picker" brush-size="5">
+                        <a href="#">
+                            <i class="border5" aria-hidden="true">&nbsp;</i>
+                        </a>
+                    </li>
+                    <li class="brush-picker" brush-size="10">
+                        <a href="#">
+                            <i class="border10" aria-hidden="true">&nbsp;</i>
+                        </a>
+                    </li>
+                    <li class="brush-picker" brush-size="15">
+                        <a href="#">
+                            <i class="border15" aria-hidden="true">&nbsp;</i>
+                        </a>
+                    </li>
+                    <li class="brush-picker" brush-size="20">
+                        <a href="#">
+                            <i class="border20" aria-hidden="true">&nbsp;</i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-custom">
+                <a href="#" class="header-icon">
+                    <span class="f-12">Color:</span>
+                    <span class="color-drop" aria-hidden="true"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="color-dropdown dropdown-menu-custom dropdown-menu">
+                    <li class="colors-btn" color-code="red">
+                        <a href="#">
+                            <span class="color-red" aria-hidden="true"></span>Red</a>
+                    </li>
+                    <li class="colors-btn" color-code="green">
+                        <a href="#">
+                            <span class="color-green" aria-hidden="true"></span>Green</a>
+                    </li>
+                    <li class="colors-btn" color-code="blue">
+                        <a href="#">
+                            <span class="color-blue" aria-hidden="true"></span>Blue</a>
+                    </li>
+                    <li class="colors-btn" color-code="black">
+                        <a href="#">
+                            <span class="color-black" aria-hidden="true"></span>Black</a>
+                    </li>
+                    <li class="colors-btn" color-code="orange">
+                        <a href="#">
+                            <span class="color-orange" aria-hidden="true"></span>Orange</a>
+                    </li>
+                    <li class="colors-btn" color-code="gray">
+                        <a href="#">
+                            <span class="color-gray" aria-hidden="true"></span>Gray</a>
+                    </li>
+                    <li class="colors-btn" color-code="blueviolet">
+                        <a href="#">
+                            <span class="color-violet" aria-hidden="true"></span>Blueviolet</a>
+                    </li>
+                    <li class="colors-btn" color-code="pink">
+                        <a href="#">
+                            <span class="color-pink" aria-hidden="true"></span>Pink</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-custom">
+                <a href="#" class="header-icon">
+                    <i class="sa sa-number" aria-hidden="true"></i>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-custom">
+                    <li id="number" class="tools-btn" data-tool="number" title="Number">
+                        <a href="#">
+                            <i class="sa sa-number" aria-hidden="true" custom-back="sa-number"></i>
+                        </a>
+                    </li>
+                    <li title="Number points" class="numbers-tool" data-tool="number_points">
+                        <a href="#">
+                            <i class="sa sa-numbers" aria-hidden="true" custom-back="sa-numbers"></i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--<li id="eraser" class="tools-btn" title="Eraser">-->
+                <!--<a href="#">-->
+                    <!--<i class="sa sa-eraser" aria-hidden="true"></i>-->
+                <!--</a>-->
+            <!--</li>-->
+            <li>
+                <a href="#" class="re-create-tools" id="undo" title="Undo">
+                    <i class="sa sa-undo" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="re-create-tools" id="redo" title="Redo">
+                    <i class="sa sa-redo" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="re-create-tools" id="undoall" title="Undo all">
+                    <i class="sa sa-undo-all" aria-hidden="true"></i>
+                </a>
+            </li>
+            <!--<li class="canvas-eye">-->
+                <!--<a href="#" class="f-12 canvas-hide-show">-->
+                    <!--<i class="sa sa-eye-invisible" aria-hidden="true"></i>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+        <!--<div class="pull-left blue-button cancel-popup">-->
+            <!--<a href="#" id="nrtv_feedback-cancel">Cancel</a>-->
+        <!--</div>-->
+        <!--<div class="pull-left blue-button done-popup">-->
+            <!--<a href="#" id="nrtv_feedback-highlighter-next">Done</a>-->
+        <!--</div>-->
+    </div>
+</header>
+<script src="jQuery.3.2.1.js" type="text/javascript"></script>
+<script src="draw.js" type="text/javascript"></script>
+</body>
+</html>
