@@ -1,5 +1,8 @@
 body{
     font-family: sans-serif;
+    margin: 10px;
+    margin-left: 0;
+    padding: 0;
 }
 .feedback-btn {
     font-size: 14px;
@@ -37,6 +40,12 @@ body{
 
 .drawing-tools .dropdown-menu {
     min-width: inherit
+}
+
+.tool-message{
+    border-right: 1px solid #cccccc;
+    padding-right: 40px;
+    margin-right: 40px;
 }
 
 .green-msg {
@@ -463,7 +472,8 @@ ul.color-dropdown {
     top: 0;
     height: 40px;
     padding: 5px;
-    padding-top: 0
+    padding-top: 0;
+    text-align: center;
 }
 
 .paint-top-header ul {
@@ -553,7 +563,7 @@ ul.color-dropdown {
     padding-right: 1px
 }
 
-@media (min-width:1044px) {
+@media (min-width:1000px) {
     .paint-top-header li {
         display: inline-block;
     }
