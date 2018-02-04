@@ -12,6 +12,11 @@ body{
     top: 280px;
     width: auto
 }
+
+#feedback-module{
+    margin-top: 45px;
+}
+
 #sketch {
     position: relative;
     height: 800px
@@ -87,7 +92,7 @@ body{
 }
 
 .brush-picker a {
-    font-size: 14px!important
+    font-size: 14px!important;
 }
 
 .brush-picker i {
